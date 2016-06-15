@@ -1,0 +1,77 @@
+{% set field_name = address.prefix~'_'~location_type %}
+{% set show_field = true %}
+{% set field_config = "required" %}
+{% set field_optional_placeholder = '' %}
+{% if address.type == 'billing' %}
+    {% set field_config = config.template_config.custom_checkout_field_requirements[address.type~'_'~location_type] %}
+    {% set field_optional_placeholder = (field_config == 'optional') ? config.lang.checkout_optional : '' %}
+    {% set show_field = (field_config != 'hidden') %}
+{% endif %}
+{% if show_field %}
+    {% set locations = config.locations %}
+    {% set locations_filter = (address.type == 'billing') ? config.locations_billing : config.locations_shipping %}
+    {% set region_lang = "checkout_country" %}
+    {% set country_code = ((address.country not in locations_filter|keys) or ((address.country in locations_filter|keys) and (locations_filter[address.country] != "*"))) ? address.country : false %}
+    {% set required_attr = (field_config == "required") ? "data-fc-required" : "" %}
+    {% if location_type == "region" %}
+        {% if country_code %}
+            {% set region_lang = "checkout_location_"~locations[country_code]['r']['lang'] %}
+            {% set locations = locations[country_code]['r']['options'] %}
+            {% set locations_filter = (country_code in locations_filter|keys) ? locations_filter[country_code] : [] %}
+            {% set required_attr = (locations[country_code]['r']['req']) ? "data-fc-required" : "" %}
+        {% else %}
+            {% set locations = [] %}
+            {% set region_lang = "checkout_location_state" %}
+        {% endif %}
+    {% endif %}
+    {% if locations|length > 0 %}
+        <select class="fc-form-control fc-location" data-fc-default-value="{{ address[location_type] }}" data-fc-id="{{ field_name }}" {{ required_attr }} name="{{ field_name }}">
+            <option value=""></option>
+            {# Join filter is returning error, buggy? #}
+            {% for c in locations %}
+                {% if location_type == "country" %}
+                    {% if (c.cc2 not in locations_filter|keys) or ((c.cc2 in locations_filter|keys) and (locations_filter[c.cc2] != "*")) %}
+                        <option
+                            value="{{ c.cc2 }}"
+                            data-relevancy-booster="{{ c.boost }}"
+                            data-alternative-spellings="{{ c.cc2 }}{% for alt in c.alt %}||{{ alt }}{% endfor %}"
+                            {% if c.cc2 == address[location_type] %}selected{% endif %}
+                        >{{ c.cn }}</option>
+                    {% endif %}
+                {% else %}
+                    {% if (locations_filter != "*") and (c.c not in locations_filter) %}
+                        <option
+                            value="{{ c.c }}"
+                            data-relevancy-booster="{{ c.boost }}"
+                            data-alternative-spellings="{{ c.c }}{% for alt in c.alt %}||{{ alt }}{% endfor %}"
+                            {% if address[location_type] in [c.c, c.n] %}selected{% endif %}
+                        >{{ c.n }}</option>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </select>
+    {% else %}
+        <input
+            data-fc-id="{{ field_name }}"
+            name="{{ field_name }}"
+            value="{{ address[location_type~'_name'] or address[location_type] }}"
+            type="text"
+            {{ required_attr }}
+            placeholder="{{ config.lang[region_lang] }}{{ field_optional_placeholder }}"
+            class="fc-form-control fc-location" />
+    {% endif %}
+    {% set error_string = utils.get_error_string(field_name, messages.errors) %}
+    {# TODO: stuff the errors array #}
+    {#
+    {% if _context[address.prefix~'_'~location_type~'_is_empty'] %}
+    <div class="alert alert-danger">
+        {{ config.lang['checkout_error_'~location_type] }}
+    </div>
+    {% endif %}
+    #}
+    {% if error_string %}
+    <div class="fc-alert fc-alert--danger">
+        {{ error_string }}
+    </div>
+    {% endif %}
+{% endif %}

@@ -1,0 +1,61 @@
+14.1.2016-19:40:40 - sendEmail initiated
+14.1.2016-19:40:40 - subject - newAccount
+14.1.2016-19:40:40 - name - Zach
+14.1.2016-19:40:40 - company - Medialusions
+14.1.2016-19:40:40 - email - zsmith812@gmail.com
+14.1.2016-19:40:41 - Mail sent succesfully
+14.1.2016-19:41:38 - sendEmail initiated
+14.1.2016-19:41:38 - subject - newAccount
+14.1.2016-19:41:38 - name - Zach
+14.1.2016-19:41:38 - company - Medialusions
+14.1.2016-19:41:38 - email - zsmith812@gmail.com
+14.1.2016-19:41:39 - Mail sent succesfully
+14.1.2016-19:42:57 - sendEmail initiated
+14.1.2016-19:42:57 - subject - newAccount
+14.1.2016-19:42:57 - name - Zach
+14.1.2016-19:42:57 - company - Medialusions
+14.1.2016-19:42:57 - email - zsmith812@gmail.com
+14.1.2016-19:42:59 - Mail sent succesfully
+14.1.2016-19:45:31 - sendEmail initiated
+14.1.2016-19:45:31 - email - zsmith812@gmail.com
+14.1.2016-19:45:32 - Mail sent succesfully
+14.1.2016-19:47:02 - sendEmail initiated
+14.1.2016-19:47:02 - email - zsmith812@gmail.com
+14.1.2016-19:47:02 - Mail sent succesfully
+14.1.2016-19:48:18 - sendEmail initiated
+14.1.2016-19:48:18 - email - zsmith812@gmail.com
+14.1.2016-19:48:18 - Mail sent succesfully
+14.1.2016-19:48:48 - sendEmail initiated
+14.1.2016-19:49:58 - sendEmail initiated
+14.1.2016-19:49:58 - email - zsmith812@gmail.com
+14.1.2016-19:49:59 - Mail sent succesfully
+14.1.2016-19:50:50 - sendEmail initiated
+14.1.2016-19:50:50 - email - mailto:samanthacook789@yahoo.com
+14.1.2016-19:50:50 - Mail sent succesfully
+14.1.2016-19:50:53 - sendEmail initiated
+14.1.2016-19:50:53 - email - mailto:samanthacook789@yahoo.com
+14.1.2016-19:50:54 - Mail sent succesfully
+14.1.2016-20:01:22 - sendEmail initiated
+14.1.2016-20:01:22 - email - samanthacook789@yahoo.com
+14.1.2016-20:01:23 - Mail sent succesfully
+14.1.2016-20:01:26 - sendEmail initiated
+14.1.2016-20:01:26 - email - samanthacook789@yahoo.com
+14.1.2016-20:01:26 - Mail sent succesfully
+14.1.2016-20:41:01 - sendEmail initiated
+14.1.2016-20:41:01 - email - info@myknightsquest.com
+14.1.2016-20:41:01 - Mail sent succesfully
+14.1.2016-20:41:04 - sendEmail initiated
+14.1.2016-20:41:04 - email - info@myknightsquest.com
+14.1.2016-20:41:04 - Mail sent succesfully
+18.1.2016-19:46:07 - sendEmail initiated
+18.1.2016-19:46:07 - email - georgia@georgiaburleson.com
+18.1.2016-19:46:07 - Mail sent succesfully
+18.1.2016-19:46:10 - sendEmail initiated
+18.1.2016-19:46:10 - email - georgia@georgiaburleson.com
+18.1.2016-19:46:11 - Mail sent succesfully
+23.1.2016-16:44:10 - sendEmail initiated
+23.1.2016-16:44:10 - email - michael@redeemedcontracting.com
+23.1.2016-16:44:10 - Mail sent succesfully
+23.1.2016-16:44:15 - sendEmail initiated
+23.1.2016-16:44:15 - email - michael@redeemedcontracting.com
+23.1.2016-16:44:15 - Mail sent succesfully
