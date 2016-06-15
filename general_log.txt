@@ -59,3 +59,189 @@
 23.1.2016-16:44:15 - sendEmail initiated
 23.1.2016-16:44:15 - email - michael@redeemedcontracting.com
 23.1.2016-16:44:15 - Mail sent succesfully
+8.2.2016-4:39:24 - sendEmail initiated
+8.2.2016-4:39:24 - email - info@medialusions.com
+8.2.2016-4:39:24 - Mail sent succesfully
+8.2.2016-14:17:30 - sendEmail initiated
+8.2.2016-14:17:30 - email - 
+8.2.2016-14:17:30 - Mail send failed
+8.2.2016-14:17:30 - sendEmail initiated
+8.2.2016-14:17:30 - email - 
+8.2.2016-14:17:30 - Mail send failed
+8.2.2016-14:18:53 - sendEmail initiated
+8.2.2016-14:18:53 - email - zsmith812@gmail.com
+8.2.2016-14:18:53 - Mail sent succesfully
+8.2.2016-14:18:53 - sendEmail initiated
+8.2.2016-14:18:53 - email - zsmith812@gmail.com
+8.2.2016-14:18:53 - Mail sent succesfully
+8.2.2016-14:20:48 - sendEmail initiated
+8.2.2016-14:20:48 - email - zsmith812@gmail.com
+8.2.2016-14:20:53 - sendEmail initiated
+8.2.2016-14:20:53 - email - zsmith812@gmail.com
+8.2.2016-14:21:17 - sendEmail initiated
+8.2.2016-14:21:17 - email - zsmith812@gmail.com
+8.2.2016-14:21:19 - sendEmail initiated
+8.2.2016-14:21:19 - email - zsmith812@gmail.com
+8.2.2016-14:21:39 - sendEmail initiated
+8.2.2016-14:21:39 - email - zsmith812@gmail.com
+8.2.2016-14:21:42 - sendEmail initiated
+8.2.2016-14:21:42 - email - zsmith812@gmail.com
+8.2.2016-14:21:53 - sendEmail initiated
+8.2.2016-14:21:53 - email - zsmith812@gmail.com
+8.2.2016-14:21:56 - sendEmail initiated
+8.2.2016-14:21:56 - email - zsmith812@gmail.com
+8.2.2016-14:22:06 - sendEmail initiated
+8.2.2016-14:22:06 - email - zsmith812@gmail.com
+8.2.2016-14:22:40 - sendEmail initiated
+8.2.2016-14:22:40 - email - zsmith812@gmail.com
+8.2.2016-14:22:54 - sendEmail initiated
+8.2.2016-14:22:54 - email - zsmith812@gmail.com
+8.2.2016-14:24:27 - sendEmail initiated
+8.2.2016-14:24:27 - email - zsmith812@gmail.com
+8.2.2016-14:24:29 - sendEmail initiated
+8.2.2016-14:24:29 - email - zsmith812@gmail.com
+8.2.2016-14:25:12 - sendEmail initiated
+8.2.2016-14:25:12 - email - zsmith812@gmail.com
+8.2.2016-14:26:30 - sendEmail initiated
+8.2.2016-14:26:30 - email - zsmith812@gmail.com
+8.2.2016-14:26:49 - sendEmail initiated
+8.2.2016-14:26:49 - email - zsmith812@gmail.com
+8.2.2016-14:26:55 - sendEmail initiated
+8.2.2016-14:26:55 - email - zsmith812@gmail.com
+8.2.2016-14:27:07 - sendEmail initiated
+8.2.2016-14:27:07 - email - zsmith812@gmail.com
+8.2.2016-14:27:32 - sendEmail initiated
+8.2.2016-14:27:32 - email - zsmith812@gmail.com
+8.2.2016-14:28:00 - sendEmail initiated
+8.2.2016-14:28:00 - email - zsmith812@gmail.com
+8.2.2016-14:28:09 - sendEmail initiated
+8.2.2016-14:28:09 - email - zsmith812@gmail.com
+8.2.2016-14:28:19 - sendEmail initiated
+8.2.2016-14:28:19 - email - zsmith812@gmail.com
+8.2.2016-14:29:27 - sendEmail initiated
+8.2.2016-14:29:27 - email - zsmith812@gmail.com
+8.2.2016-14:29:36 - sendEmail initiated
+8.2.2016-14:29:36 - email - zsmith812@gmail.com
+8.2.2016-14:30:23 - sendEmail initiated
+8.2.2016-14:30:23 - email - zsmith812@gmail.com
+8.2.2016-14:30:23 - Mail sent succesfully
+8.2.2016-14:35:25 - sendEmail initiated
+8.2.2016-14:35:25 - email - zsmith812@gmail.com
+8.2.2016-14:35:25 - Mail sent succesfully
+8.2.2016-14:36:35 - sendEmail initiated
+8.2.2016-14:36:35 - email - zsmith812@gmail.com
+8.2.2016-14:36:35 - Mail sent succesfully
+8.2.2016-14:38:55 - sendEmail initiated
+8.2.2016-14:38:55 - email - zsmith812@gmail.com
+8.2.2016-14:38:55 - Mail sent succesfully
+8.2.2016-14:39:56 - sendEmail initiated
+8.2.2016-14:39:56 - email - zsmith812@gmail.com
+8.2.2016-14:39:56 - Mail sent succesfully
+8.2.2016-14:41:09 - sendEmail initiated
+8.2.2016-14:41:09 - email - zsmith812@gmail.com
+8.2.2016-14:41:09 - Mail sent succesfully
+8.2.2016-14:41:54 - sendEmail initiated
+8.2.2016-14:41:54 - email - zsmith812@gmail.com
+8.2.2016-14:41:54 - Mail sent succesfully
+8.2.2016-14:42:13 - sendEmail initiated
+8.2.2016-14:42:13 - email - zsmith812@gmail.com
+8.2.2016-14:42:13 - Mail sent succesfully
+8.2.2016-14:42:25 - sendEmail initiated
+8.2.2016-14:42:25 - email - zsmith812@gmail.com
+8.2.2016-14:42:26 - Mail sent succesfully
+8.2.2016-14:46:55 - sendEmail initiated
+8.2.2016-14:46:55 - email - zsmith812@gmail.com
+8.2.2016-14:46:55 - Mail sent succesfully
+8.2.2016-14:48:00 - sendEmail initiated
+8.2.2016-14:48:00 - email - zsmith812@gmail.com
+8.2.2016-14:48:01 - Mail sent succesfully
+8.2.2016-14:51:24 - sendEmail initiated
+8.2.2016-14:51:24 - email - zsmith812@gmail.com
+8.2.2016-14:51:24 - Mail sent succesfully
+8.2.2016-14:52:49 - sendEmail initiated
+8.2.2016-14:52:49 - email - dakota.sheets@yahoo.com
+8.2.2016-14:52:49 - Mail sent succesfully
+8.2.2016-15:17:01 - sendEmail initiated
+8.2.2016-15:17:01 - email - racheljamesmusic@gmail.com
+8.2.2016-15:17:01 - Mail sent succesfully
+9.2.2016-16:56:49 - sendEmail initiated
+9.2.2016-16:56:49 - email - zsmith812@gmail.com
+9.2.2016-16:56:49 - Mail sent succesfully
+9.2.2016-16:57:44 - sendEmail initiated
+9.2.2016-16:57:44 - email - aph@aphcreativedesign.com
+9.2.2016-16:57:44 - Mail sent succesfully
+11.2.2016-10:47:41 - sendEmail initiated
+11.2.2016-10:47:41 - email - zsmith812@gmail.com
+11.2.2016-10:47:41 - Mail sent succesfully
+25.2.2016-11:49:52 - sendEmail initiated
+25.2.2016-11:49:52 - email - zsmith812@gmail.com
+25.2.2016-11:49:53 - Mail sent succesfully
+25.2.2016-11:50:56 - sendEmail initiated
+25.2.2016-11:50:56 - email - autumn.epstein@gmail.com
+25.2.2016-11:50:56 - Mail sent succesfully
+3.3.2016-10:52:58 - sendEmail initiated
+3.3.2016-10:52:58 - email - zsmith812@gmail.com
+3.3.2016-10:52:58 - Mail sent succesfully
+3.3.2016-10:54:24 - sendEmail initiated
+3.3.2016-10:54:24 - email - michael@redeemedcontracting.com
+3.3.2016-10:54:24 - Mail sent succesfully
+24.3.2016-19:10:42 - sendEmail initiated
+24.3.2016-19:10:42 - email - michael@redeemedcontracting.com
+24.3.2016-19:10:42 - Mail sent succesfully
+24.3.2016-19:11:39 - sendEmail initiated
+24.3.2016-19:11:39 - email - accounting@pedenver.com
+24.3.2016-19:11:39 - Mail sent succesfully
+25.3.2016-10:28:17 - sendEmail initiated
+25.3.2016-10:28:17 - email - sweetchildclothing@gmail.com
+25.3.2016-10:28:17 - Mail sent succesfully
+3.4.2016-12:45:48 - sendEmail initiated
+3.4.2016-12:45:48 - email - michael@redeemedcontracting.com
+3.4.2016-12:45:48 - Mail sent succesfully
+8.4.2016-15:03:25 - sendEmail initiated
+8.4.2016-15:03:25 - email - accounting@pedenver.com
+8.4.2016-15:03:25 - Mail sent succesfully
+11.4.2016-12:49:57 - sendEmail initiated
+11.4.2016-12:49:57 - email - accounting@pedenver.com
+11.4.2016-12:49:57 - Mail sent succesfully
+18.4.2016-20:34:09 - sendEmail initiated
+18.4.2016-20:34:09 - email - zsmith812@gmail.com
+18.4.2016-20:34:09 - Mail sent succesfully
+22.4.2016-12:21:46 - sendEmail initiated
+22.4.2016-12:21:46 - email - dakota@resolutioncolo.com
+22.4.2016-12:21:46 - Mail sent succesfully
+22.4.2016-12:25:04 - sendEmail initiated
+22.4.2016-12:25:04 - email - mike47spivey@q.com
+22.4.2016-12:25:04 - Mail sent succesfully
+2.5.2016-19:14:12 - sendEmail initiated
+2.5.2016-19:14:12 - email - accounting@pedenver.com
+2.5.2016-19:14:12 - Mail sent succesfully
+5.5.2016-11:20:04 - sendEmail initiated
+5.5.2016-11:20:04 - email - dakota@resolutioncolo.com
+5.5.2016-11:20:04 - Mail sent succesfully
+12.5.2016-12:44:35 - sendEmail initiated
+12.5.2016-12:44:35 - email - i
+12.5.2016-12:44:36 - Mail sent succesfully
+12.5.2016-19:22:16 - sendEmail initiated
+12.5.2016-19:22:16 - email - i
+12.5.2016-19:22:16 - Mail sent succesfully
+30.5.2016-22:13:47 - sendEmail initiated
+30.5.2016-22:13:47 - email - info@myknightsquest.com
+30.5.2016-22:13:47 - Mail sent succesfully
+30.5.2016-22:15:14 - sendEmail initiated
+30.5.2016-22:15:14 - email - michael@redeemedcontracting.com
+30.5.2016-22:15:14 - Mail sent succesfully
+31.5.2016-20:54:09 - sendEmail initiated
+31.5.2016-20:54:09 - email - i
+31.5.2016-20:54:10 - Mail sent succesfully
+5.6.2016-22:41:15 - sendEmail initiated
+5.6.2016-22:41:15 - email - sue@suepriest.com
+5.6.2016-22:41:15 - Mail sent succesfully
+10.6.2016-12:32:08 - sendEmail initiated
+10.6.2016-12:32:08 - email - zsmith812@gmail.com
+10.6.2016-12:32:08 - Mail sent succesfully
+10.6.2016-12:43:38 - sendEmail initiated
+10.6.2016-12:43:38 - email - dakota@resolutioncolo.com
+10.6.2016-12:43:39 - Mail sent succesfully
+11.6.2016-19:20:17 - sendEmail initiated
+11.6.2016-19:20:17 - email - sweetchildclothing@gmail.com
+11.6.2016-19:20:17 - Mail sent succesfully

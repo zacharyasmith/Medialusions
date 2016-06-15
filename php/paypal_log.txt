@@ -16,3 +16,11 @@
 14.1.2016-18:36:31 - SQL - UPDATE charges SET status='paid' WHERE id=112;
 14.1.2016-18:36:31 - Item ID - 113
 14.1.2016-18:36:31 - SQL - UPDATE charges SET status='paid' WHERE id=113;
+3.5.2016-3:27:22 - Index of item_number1 - 3
+3.5.2016-3:27:22 - CurrId of item_number1 - 148
+3.5.2016-3:27:22 - Index of item_number2 - 5
+3.5.2016-3:27:22 - CurrId of item_number2 - 140
+3.5.2016-3:27:22 - Item ID - 148
+3.5.2016-3:27:22 - SQL - UPDATE charges SET status='paid' WHERE id=148;
+3.5.2016-3:27:22 - Item ID - 140
+3.5.2016-3:27:22 - SQL - UPDATE charges SET status='paid' WHERE id=140;

@@ -3,7 +3,7 @@
 //Variables for connecting to your database.
 //These variable values come from your hosting account.
 $hostname = "localhost";
-$username = "medialusions";
+$username = "admin";
 $dbname = "medialusions";
 
 //These variable values need to be changed by you before deploying
