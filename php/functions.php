@@ -43,23 +43,6 @@ function tracker() {
     $query_string = isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
     $http_referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
     $http_user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
-    //Load the class
-    //$ipLite = new ip2location_lite;
-    //$ipLite->setKey(IP_LOCATION_API_KEY);
-    //Get errors and locations
-    //$locations = $ipLite->getCity($ip);
-    //$errors = $ipLite->getError();
-    //Getting the result
-//    if (!empty($locations) && is_array($locations)) {
-//      foreach ($locations as $field => $val) {
-//        if ($field == 'countryName'){
-//            $country = $val;
-//        }
-//        if ($field == 'cityName'){
-//            $city = $val;
-//        }
-//      }
-//    }
     $country = "N/A";
     $city = "N/A";
     if (is_bot()) {
@@ -497,7 +480,7 @@ function truncate($text, $length = 100, $ending = '...', $exact = true, $conside
         foreach ($lines as $line_matchings) {
             // if there is any html-tag in this line, handle it and add it (uncounted) to the output
             if (!empty($line_matchings[1])) {
-                // if it’s an “empty element” with or without xhtml-conform closing slash (f.e.)
+                // if it’s an “empty element�? with or without xhtml-conform closing slash (f.e.)
                 if (preg_match('/^<(\s*.+?\/\s*|\s*(img|br|input|hr|area|base|basefont|col|frame|isindex|link|meta|param)(\s.+?)?)>$/is', $line_matchings[1])) {
                     // do nothing
                     // if tag is a closing tag (f.e.)
