@@ -1,7 +1,6 @@
 <?php
 include('php/functions.php');
 
-error_reporting(E_ALL);
 
 $error_contact = '';
 $error_login = isset($_GET['mes']) ? $_GET['mes'] : '';
@@ -143,7 +142,7 @@ if (isset($_POST['user'])) {
         <div id="header">
             <div id="menu_wrapper">
                 <nav>
-                    <a href="http://www.medialusions.com">HOME</a>
+                    <a href="/medialusions/">HOME</a>
                     <a href="?s=Website">PORTFOLIO</a>
                     <a href="#contact">CONTACT</a>
                     <a href="<?php echo check_log_in('menu_link'); ?>"><?php echo check_log_in('menu'); ?></a>
@@ -157,7 +156,7 @@ if (isset($_POST['user'])) {
         </div>
         <div itemscope itemtype="http://schema.org/LocalBusiness" id="grid">
             <div class="block square">
-                <a href="http://www.medialusions.com">
+                <a href="/medialusions/">
                     <img itemprop="image" src="grid/images/logo.png" alt="Medialusions Interactive, Logo" />
                 </a>
             </div>

@@ -6,9 +6,9 @@ if (isset($_GET['logout'])) {
     session_unset();
     session_destroy();
     if (!isset($_GET['header'])) {
-        header('Location: http://www.medialusions.com?logout&header');
+        header('Location: /medialusions/?logout&header');
     } else {
-        header('location: http://www.medialusions.com');
+        header('location: /medialusions/');
     }
 }
 include_once ('mysqlConnect.php');
@@ -208,7 +208,7 @@ function check_log_in($what = 'client', $type = 'default', $return_url = false) 
         }
         if (is_null($_SESSION['user'])) {
             $full_url = $return_url ? '&forward=http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING'] : '';
-            header('Location: http://www.medialusions.com?mes=Login first to view this page.' . $full_url . '#log-in');
+            header('Location: /medialusions/?mes=Login first to view this page.' . $full_url . '#log-in');
             die;
         }
     } else if ($what == 'client') {
@@ -221,7 +221,7 @@ function check_log_in($what = 'client', $type = 'default', $return_url = false) 
         }
         if (is_null($_SESSION['user'])) {
             $full_url = $return_url ? '&forward=http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING'] : '';
-            header('Location: http://www.medialusions.com?mes=Login first to view this page.' . $full_url . '#log-in');
+            header('Location: /medialusions/?mes=Login first to view this page.' . $full_url . '#log-in');
             die;
         }
     } else if ($what == 'menu') {
@@ -480,7 +480,7 @@ function truncate($text, $length = 100, $ending = '...', $exact = true, $conside
         foreach ($lines as $line_matchings) {
             // if there is any html-tag in this line, handle it and add it (uncounted) to the output
             if (!empty($line_matchings[1])) {
-                // if it’s an “empty element�? with or without xhtml-conform closing slash (f.e.)
+                // if it’s an “empty element�? with or without xhtml-conform closing slash (f.e.)
                 if (preg_match('/^<(\s*.+?\/\s*|\s*(img|br|input|hr|area|base|basefont|col|frame|isindex|link|meta|param)(\s.+?)?)>$/is', $line_matchings[1])) {
                     // do nothing
                     // if tag is a closing tag (f.e.)
