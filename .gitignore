@@ -1,5 +1,11 @@
-/nbproject/private/
-/nb/medialusions/nbproject/private/
+#IDE
+/nbproject/
+/nb/
+
+#private
 /php/mysqlConnect
+/files/invoices/
+
+#other repos
 /navsonline/
 /navsonline/*
