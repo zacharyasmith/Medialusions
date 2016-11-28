@@ -245,6 +245,7 @@
 11.6.2016-19:20:17 - sendEmail initiated
 11.6.2016-19:20:17 - email - sweetchildclothing@gmail.com
 11.6.2016-19:20:17 - Mail sent succesfully
+<<<<<<< HEAD
 30.6.2016-10:04:01 - sendEmail initiated
 30.6.2016-10:04:01 - email - zsmith812@gmail.com
 30.6.2016-10:04:01 - Mail sent succesfully
@@ -284,3 +285,5 @@
 16.11.2016-12:49:09 - sendEmail initiated
 16.11.2016-12:49:09 - email - i
 16.11.2016-12:49:09 - Mail sent succesfully
+=======
+>>>>>>> 5489bd92785555821f8a0c5358ef665dc3342dbf

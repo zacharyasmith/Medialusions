@@ -1,16 +1,9 @@
 <?php
+error_reporting(0);
 
-//Variables for connecting to your database.
-//These variable values come from your hosting account.
-$hostname = "localhost";
-$username = "admin";
-$dbname = "medialusions";
+$username = "media";
+$password = "RGdTOLOKre@wm5b";
+$database = "medialusions";
 
-//These variable values need to be changed by you before deploying
-$password = "bobbYjr1#";
-
-
-//Connecting to your database
-mysql_connect($hostname, $username, $password) OR DIE("Unable to 
-            connect to database! Please try again later.");
-mysql_select_db($dbname) OR DIE('Unable to connect to DataBase, please try later!');
+mysql_connect("localhost", $username, $password);
+mysql_select_db($database) or die("Unable to select database");
