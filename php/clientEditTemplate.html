@@ -1,0 +1,79 @@
+<div class="chargeContainer">
+    <form action="client.php" style="margin: 15px;" method="post">
+        <input type="hidden" name="editCharge" value="">
+        <input type="hidden" value="%SERVER_SIDE_INPUT_CHID%" name="id">
+        <div class="floatl" style="width: 100%;">
+            <label for="sliderDays">Recur Period (days) - Slide to see changes.</label>
+            <div id="slider"></div>
+            <input type="text" name="recurPeriod" id="sliderDays" readonly>
+        </div>
+
+        <div class="fifty floatl">
+            <label for="nextDueDate">Next Due Date</label>
+            <input type="text" name="nextDueDate" value="%SERVER_SIDE_INPUT_DATE%" id="nextDueDate" readonly>
+        </div>
+
+        <div class="fifty floatl">
+            <label for="currentPrice">Current Total Price</label>
+            <input type="text" name="currentPrice" value="%SERVER_SIDE_INPUT_PRICE%" id="currentPrice" readonly>
+        </div>
+        <input type="submit" value="Save"> <a href="?id=%SERVER_SIDE_INPUT_CHID%&deselect&charge">Cancel</a>
+    </form>
+    <script type="text/javascript">
+        function updateDueDate(newRecurPeriod) {
+            //SET THESE WITH SERVERSIDE
+            var presetDueDate = new Date("%SERVER_SIDE_INPUT_DATE%");
+            var presetRecurPeriod = %SERVER_SIDE_INPUT_PERIOD%;
+            //END PRESET
+            var difference = newRecurPeriod - presetRecurPeriod;
+            presetDueDate.setDate(presetDueDate.getDate() + difference);
+
+            $("#nextDueDate").val((presetDueDate.getMonth() + 1) + "/" + presetDueDate.getDate() + "/" + presetDueDate.getFullYear());
+        }
+
+        function toUSD(number) {
+            var number = number.toString(),
+                    dollars = number.split('.')[0],
+                    cents = (number.split('.')[1] || '') + '00';
+            dollars = dollars.split('').reverse().join('')
+                    .replace(/(\d{3}(?!$))/g, '$1,')
+                    .split('').reverse().join('');
+            return '$' + dollars + '.' + cents.slice(0, 2);
+        }
+
+        function updateTotalPrice(newRecurPeriod) {
+            //SET THESE WITH SERVERSIDE
+            var presetRecurPeriod = %SERVER_SIDE_INPUT_PERIOD%;
+            var presetPrice = "%SERVER_SIDE_INPUT_PRICE%";
+            //END PRESET
+            var presetMonths = presetRecurPeriod / 30;
+            var presetPrice = parseFloat(presetPrice.substring(1));
+            var presetMonthly = presetPrice / presetMonths;
+
+            var difference = newRecurPeriod - presetRecurPeriod;
+            var differenceInMonths = difference / 30;
+
+            var costDifference = presetMonthly * differenceInMonths;
+            var toSet = presetPrice + costDifference;
+            var toSet = toUSD(toSet);
+
+            $("#currentPrice").val(toSet);
+        }
+        $(function() {
+            $("#slider").slider({
+                value: %SERVER_SIDE_INPUT_PERIOD%,
+                min: 30,
+                max: 360,
+                step: 30,
+                slide: function(event, ui) {
+                    $("#sliderDays").val(ui.value + " days");
+                },
+                stop: function(event, ui) {
+                    updateDueDate(ui.value);
+                    updateTotalPrice(ui.value);
+                }
+            });
+            $("#sliderDays").val($("#slider").slider("value") + " days");
+        });
+    </script>
+</div>

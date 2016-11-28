@@ -1,0 +1,268 @@
+#feedback-page{
+    text-align:center;
+}
+
+#form-main{
+    width:100%;
+    float:left;
+    padding-top:0px;
+
+}
+#contact{
+    position: absolute;
+    top: -700px;
+    left: 50%;
+    transition: all .75s ease-in-out;
+}
+#contact:target {
+    transition: all .75s ease-in-out;
+    top: 0px;
+}
+#log-in{
+    position: absolute;
+    top: -700px;
+    left: 50%;
+    transition: all .75s ease-in-out;
+}
+#log-in:target {
+    transition: all .75s ease-in-out;
+    top: 0px;
+}
+
+#form-div{
+    background: url('images/menu_bg.png');
+    border: white solid 4px;
+    padding-left:35px;
+    padding-right:35px;
+    padding-top:35px;
+    padding-bottom:50px;
+    width: 600px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top:80px;
+    margin-left: -300px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    z-index: 999;
+    display: initial;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: display;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    /* Standard syntax */
+    transition-property: display;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.feedback-input {
+    color:#3c3c3c !important;
+    font-family: 'Droid Sans', sans-serif !important;
+    font-weight:500 !important;
+    font-size: 18px !important;
+    border-radius: 0 !important;
+    line-height: 22px !important;
+    background-color: #fbfbfb !important;
+    padding: 13px 13px 13px 54px !important;
+    margin-bottom: 10px !important;
+    width:100% !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0) !important;
+}
+
+
+.focused{
+    color:#30aed6;
+    border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus{
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment{
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-blue{
+    font-family: 'Droid Sans', sans-serif;
+    float:left;
+    width: 100%;
+    border: #601d00 solid 4px;
+    cursor:pointer;
+    background: none;
+    color: #601d00;
+    font-size:24px;
+    padding-top:22px;
+    padding-bottom:22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+#button-blue:hover{
+    background-color: rgba(0,0,0,0);
+    color: #00937f;
+    border: #00937f solid 4px;
+
+}
+
+.submit:hover {
+    color: #3498db;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease{
+    width:100%;
+    background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+a.boxclose{
+    float:right;
+    margin-top:-45px;
+    margin-right:-45px;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0;
+    padding: 10px 5px 15px 5px;
+    text-decoration: none;
+}
+
+.boxclose:before {
+    content: "×";
+}
+
+#form1, #log_in_form{
+    float: left; display: block; width: 55%;
+    
+}
+
+#form-div > div{
+    float: left; width: 45%;
+}
+
+@media (min-width: 1px) and (max-width: 630px){
+    /**Adjusting drop downs**/
+    #contact, #log-in{
+        left:0;
+        right:0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    a.boxclose{
+        margin-top: -18px;
+        margin-bottom: 3px;
+        margin-right: 0;
+    }
+    
+    a.boxclose:after{
+        content: "cancel";
+    }
+    
+    #contact:target, #log-in:target{
+        top: 155px;
+        bottom:0;
+        height: 100%;
+    }
+    
+    #form-div{
+        margin: 0;
+        padding: 20px 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;        
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+
+    }
+    
+    #form-div form{
+        width: 100%;
+    }
+    
+    #form-div > div{
+        width: 100%;
+    }
+    
+    .ease{
+        //display: none;
+    }
+}

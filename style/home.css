@@ -1,0 +1,654 @@
+/*
+Theme Name: MIICustom
+Theme URI: http://medialusions.com/
+Description: Custom Theme For Medialusions
+Author: Zachary Smith | Medialusions Interactive, Inc
+Author URI: http://zachsmithdesigns.com/
+Version: 1.0
+Tags: light, responsive, custom, fonts, geometric, awesome ;)
+*/
+
+html{color:#000;background:#FFF}
+/**********************
+        GLOBAL RESET
+**********************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {font-family: 'Calibri',sans-serif;line-height:1.5em;font-size: 15px;font-weight: 100;color:#FFF;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display:block;}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ins {
+    background-gridor:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-gridor:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {border-gridlapse:gridlapse; border-spacing:0;}
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {vertical-align:middle;}
+img { max-width: 100%;}
+p { margin-bottom: 5px; }
+/*************************
+        END RESET
+**************************/
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url('images/main_bg.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#menu_wrapper{
+    width: 100%;
+    padding: 15px 0 5px 0;
+    height: auto;
+    background: url('images/menu_bg.png');
+}
+nav{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 0px 20px 10px 20px;
+    outline: none;
+    color: #601d00;
+    font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+/* Effect 8: border slight translate */
+nav a::before,
+nav a::after  {
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #601d00;
+    padding: 1px 5px;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+nav a::after  {
+    border-color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(-7px) translateX(6px);
+    -moz-transform: translateY(-7px) translateX(6px);
+    transform: translateY(-7px) translateX(6px);
+}
+
+nav a:hover::before,
+nav a:focus::before {
+    opacity: 0;
+    -webkit-transform: translateY(5px) translateX(-5px);
+    -moz-transform: translateY(5px) translateX(-5px);
+    transform: translateY(5px) translateX(-5px);
+}
+
+nav a:hover::after,
+nav a:focus::after  {
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateX(0px);
+    -moz-transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) translateX(0px);
+}
+
+ul{
+    list-style: square;
+    margin-left: 10px;
+}
+li{
+    margin-left: 10px;
+}
+fieldset{
+    border: 1px solid;
+
+    margin: 0 5px;
+    padding: 5px;
+}
+legend{
+    font-weight: bold;
+    
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1.4em;
+}
+/********************************************
+            GRID LAYOUT & DESIGN
+********************************************/
+.block, #logo{
+    display: block;
+    margin: 2.5px 2.5px;
+    padding: 0;
+    float: left;
+    height: 240px;
+    position: relative;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    -webkit-animation: scaleUp 0.4s ease-in-out forwards;
+    animation: scaleUp 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+	0% { }
+	100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@keyframes scaleUp {
+	0% { }
+	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+
+#invoice_wrapper{
+    border: 1px solid black;
+    font-size: 14px !important;
+    line-height: initial;
+    width: 637px;
+    min-height: 787.5px;
+    margin: 5px auto;
+    padding: 30px 37.5px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media print
+{
+    #invoice_wrapper { border: none !important;} 
+    .noPrint{ display: none; }
+}
+
+#invoice_wrapper #logo{
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    height: 120px;
+    background: url('images/LOGO.png') no-repeat;
+    background-size: contain;
+}
+
+#invoice_info h1{
+    font-size: 36px;
+    color: #00917f;
+    font-family: 'Raleway', sans-serif;
+}
+
+#client_info{
+    width: 100%;
+    overflow: hidden;
+}
+
+#grid
+{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.title{
+    background: url('images/menu_bg.png');
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    height: 45px;
+    overflow: hidden;
+}
+.square .title, .square{
+    max-width: 310px;
+    width: 100%;
+}
+.rectangle .title, .rectangle{
+    max-width: 625px;
+    width: 100%;
+}
+.big_rectangle{
+    width: 820px;
+    height: 485px;
+}
+.tall_rectangle{
+    width: 430px;
+    height: 485px;
+}
+.video .title{
+    width: 100%;
+}
+.title h1{
+    color: #d35c29;
+    position: absolute;
+    z-index: 0;
+    font-size: 3.5em;
+    margin: 10px 5px 2px auto;
+    padding: 0;
+    /* text-transform: uppercase; */
+}
+.title h2{
+    z-index: 1;
+    position: relative;
+    color: #cdf6ff;
+    top: 30px;
+    line-height: 0em;
+    left: 8px;
+    font-size: 1.1em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.full_bg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.floatl{
+    float: left;
+}
+.floatr{
+    float: right;
+}
+.fifty{
+    width: 50% !important;
+}
+.thirty{
+    width: 33.33% !important;
+}
+.sixty{
+    width: 66.66% !important;
+}
+.chargeContainer{
+    width:100%;
+    overflow: hidden;
+    font-size: 1.2em;
+    border-top: 1px dashed;
+}
+.chargeContainer .chargeNum{
+    width:15%;
+}
+.chargeContainer .chargeDescription{
+    width: 40%;
+}
+.chargeContainer .chargeWideDescription{
+    width: 55%;
+}
+.chargeCartContainer{
+    width:100%;
+    overflow: hidden;
+    font-size: 1.2em;
+    border-top: 1px dashed;
+}
+.chargeCartContainer .chargeNum{
+    width:30%;
+    font-size: .9em;
+}
+.chargeCartContainer .chargeDescription{
+    width: 40%;
+    font-size: .9em;
+}
+/********************************************
+            Fonts and styles
+********************************************/
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.0em;
+    color: #fff;
+    padding: 5px 8px;
+}
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    color: #E3E3E3;
+    padding: 1px 8px;
+    line-height: 1.1em;
+    margin: 0px;
+}
+/********************************************
+        Client.php block styles
+********************************************/
+.client_information h1, .client_information h2, .client_information{
+    color: #7a86a6;
+    background: #c7d273;
+}
+.client_information h1{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.client_information h2{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0 0 10px;
+    padding: 0 5px;
+}
+.no_website h1, .no_website h2, .no_website{
+    color: #a5c3c6;
+    background: #019280;
+}
+.no_website h1{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.no_website h2{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0 0 10px;
+    padding: 0 5px;
+}
+.billing h1, .billing h2, .billing{
+    color: #dd8811;
+    background: #bb4400;
+}
+.billing h1{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.billing h2{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0 0 10px;
+    padding: 0 5px;
+}
+
+
+
+.cart h1, .cart h2, .cart{
+    color: #792d8c;
+    background: #e7e7e2;
+}
+.cart h1{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.cart h2{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0 0 10px;
+    padding: 0 5px;
+}
+
+/********************************************
+        Admin.php styles
+********************************************/
+.admin_grid_center ul{
+    list-style: none;
+}
+
+.admin_grid_center ul li{
+    display: block;
+    float: left;
+    width: 100%;
+    border-top: 1px dotted lightgray;
+}
+
+/********************************************
+        Input styles
+********************************************/
+form .input {
+    color: #444;
+}
+form .required {
+    font-weight: bold;
+}
+form .required label:after {
+    color: #e32;
+    content: '*';
+    display:inline;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+input, textarea {
+    clear: both;
+    font-size: 100%;
+    font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+    padding: 1%;
+    width:98%;
+}
+select {
+    clear: both;
+    font-size: 120%;
+    vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+    width: 100%;
+}
+option {
+    font-size: 120%;
+    padding: 0 3px;
+}
+input[type=checkbox] {
+    clear: left;
+    float: left;
+    margin: 3px 5px;
+    width: auto;
+}
+div.checkbox label {
+    display: inline;
+}
+input[type=radio] {
+    float:left;
+    width:auto;
+    margin: 6px 0;
+    padding: 0;
+    line-height: 26px;
+}
+.radio label {
+    margin: 0 0 6px 20px;
+    line-height: 26px;
+}
+
+input[type="text"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="time"], input[type="url"], input[type="password"],Â textarea, select {
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 5px;
+
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus{
+    background: #d2d9dd;
+}
+select{
+    -webkit-appearance: menulist-button;
+    height: 27px;
+}
+
+input[type="submit"],
+input[type="button"]
+{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #1A53A5);
+    background-image: -moz-linear-gradient(top, #3498db, #1A53A5);
+    background-image: -ms-linear-gradient(top, #3498db, #1A53A5);
+    background-image: -o-linear-gradient(top, #3498db, #1A53A5);
+    background-image: linear-gradient(to bottom, #3498db, #1A53A5);
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 3px 10px 3px 10px;
+    border: solid #1f628d 2px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 128px;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover
+{
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+/****************************
+        MOBILE STYLING
+*******************************/
+@media (min-width: 1px) and (max-width: 630px){
+
+    /**Adjusting the grid for mobile**/
+
+    .block, #logo{
+        max-height: 240px;
+        height: initial;
+    }
+    .rectangle{
+        width: 100%;
+    }
+    
+    .video, video{
+        width: 100% !important;
+    }
+    
+    .square{
+        width: 50%;
+    }
+    
+    .square, .rectangle, .video{
+        margin: 2.5px 0;
+    }
+    
+    .title{
+        bottom: 6px;
+    }
+    
+    .title h1{
+        font-size: 1.5em;
+        color: #cdf6ff;
+    }
+    
+    .title h2{
+        font-size: .9em;
+    }
+    
+    .title h2, .title h1{
+        position: initial;
+        line-height: initial;
+        margin: 0 0 1px 2px;
+    }
+    
+    /**Adjusting the menu**/
+    #menu_wrapper{
+        height: auto;
+    }
+    
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav a{
+        padding: 5px 0;
+        margin: 0;
+        width: 50%;
+        float: left;
+        line-height: 1.3em;
+        background: url('images/menu_bg.png') repeat-x;
+        color: cornsilk;
+    }
+    
+    nav a::before,
+    nav a::after  {
+        content: none;
+    }
+    
+}
