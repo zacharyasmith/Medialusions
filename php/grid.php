@@ -1,7 +1,5 @@
 <?php
 
-include 'functions.php';
-include 'mysqlConnect.php';
 
 class grid {
 

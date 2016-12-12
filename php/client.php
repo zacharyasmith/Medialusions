@@ -1,7 +1,5 @@
 <?php
 
-include 'functions.php';
-
 class Client {
 
     public $id, $name, $company, $email, $password, $address, $city, $state, $zip, $phone, $website, $staticInformation;

@@ -1,9 +1,13 @@
 <?php
+
 include ('php/functions.php');
 include ('php/grid.php');
 include ('php/client.php');
 include ('php/charge.php');
 include ('php/invoice.php');
+
+global $site_base;
+
 check_log_in('client');
 $client = new Client($_SESSION['user']);
 
@@ -51,7 +55,7 @@ if (isset($_GET['thankyou'])) {
             <div id="menu_wrapper">
                 <nav>
                     <a href="http://medialusions.com">HOME</a>
-                    <a href="?logout">LOGOUT</a>
+                    <a href="<?= $site_base ?>?logout">LOGOUT</a>
                 </nav>
             </div>
         </div>
@@ -165,14 +169,13 @@ if (isset($_GET['thankyou'])) {
                             1606 Birmingham Dr<br>
                             Fort Collins, CO 80526<br><br>
                             <span style="font-size: 10px;">
-                            *Friendly 2.9% applied for all PayPal/Credit Card transactions. Sorry... If not you, it would be me. We wouldn't want that now would we?<br>
-                            **Please include a note describing what you are paying for; if there is no note, I will assume you are donating this to a non-profit of my choice ☺
+                            *Friendly 2.9% applied for all PayPal/Credit Card transactions.<br>
                             </span>
                         </div>
                         <?php
                     } else if(isset($_GET['thankyou'])){
                         echo '<h2>Thank you for your payment!</h2>'
-                        . '<div style="margin: 0 5px;">If the items you have payed for do not reflect '
+                        . '<div style="margin: 0 5px;">If the items you have paid for do not reflect '
                         . 'the purchase, please give time for the system to '
                         . 'complete its course. If you think there is a sort '
                         . 'of error, please go "HOME" and use the "CONTACT" '
@@ -181,7 +184,7 @@ if (isset($_GET['thankyou'])) {
                         echo '<h2>Your cart is empty...</h2>'
                         . '<br><br><br>'
                         . '<div align="center"><img style="width:30%;" src="style/images/redbubble.png">'
-                        . '<br>Well, I mean, while you\'re here, go on and check out my t-shirt designs at redbubble...... Please ☺<br>'
+                        . '<br>While you\'re here, go on and check out my t-shirt designs at redbubble. Thank you for your continued business!<br>'
                         . '<a target="_blank" href="http://www.redbubble.com/people/medialusions/shop">
                             <button>Shop Now</button></a></div>';
                     }
@@ -208,4 +211,4 @@ if (isset($_GET['thankyou'])) {
         </script>
     </body>
 </html>
-<?php ob_flush(); ?>
+<?php ob_flush();

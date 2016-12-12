@@ -1,6 +1,4 @@
 <?php
-error_reporting(0);
-
 $username = "media";
 $password = "RGdTOLOKre@wm5b";
 $database = "medialusions";

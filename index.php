@@ -1,8 +1,6 @@
 <?php
 include('php/functions.php');
 
-error_reporting(E_ALL);
-
 $error_contact = '';
 $error_login = isset($_GET['mes']) ? $_GET['mes'] : '';
 if (isset($_POST['name'])) {

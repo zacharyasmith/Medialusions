@@ -5,6 +5,8 @@ include ('php/client.php');
 include ('php/charge.php');
 include ('php/invoice.php');
 
+global $site_base;
+
 check_log_in('admin');
 if (isset($_POST['shape'])) {
     $file_src = fileUpload($_POST['shape']);
@@ -106,7 +108,7 @@ if (isset($_SESSION['adminCharge'])) {
             <div id="menu_wrapper">
                 <nav>
                     <a href="http://medialusions.com">HOME</a>
-                    <a href="?logout">LOGOUT</a>
+                    <a href="<?= $site_base ?>?logout">LOGOUT</a>
                 </nav>
             </div>
         </div>

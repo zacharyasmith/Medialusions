@@ -1,19 +1,26 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+
 ob_start();
 session_start();
+//$site_base = 'http://localhost:8888/medialusions';
+$site_base = 'http://www.medialusions.com';
+
+include_once ('mysqlConnect.php');
+include_once ('resize.php');
+include_once ('ip2locationlite.class.php');
+
 if (isset($_GET['logout'])) {
     session_unset();
     session_destroy();
     if (!isset($_GET['header'])) {
-        header('Location: http://www.medialusions.com?logout&header');
+        header('Location: '.$site_base.'?logout&header');
     } else {
-        header('location: http://www.medialusions.com');
+        header('location: '.$site_base.'');
     }
 }
-include_once ('mysqlConnect.php');
-include_once ('resize.php');
-include_once ('ip2locationlite.class.php');
+
 date_default_timezone_set('America/Denver');
 
 //define("UPLOAD_DIR", "/webroot/medialusions.com/grid/images/");
@@ -225,7 +232,7 @@ function check_log_in($what = 'client', $type = 'default', $return_url = false) 
         }
         if (is_null($_SESSION['user'])) {
             $full_url = $return_url ? '&forward=http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING'] : '';
-            header('Location: http://www.medialusions.com?mes=Login first to view this page.' . $full_url . '#log-in');
+            header('Location: '.$site_base.'?mes=Login first to view this page.' . $full_url . '#log-in');
             die;
         }
     } else if ($what == 'client') {
@@ -238,7 +245,7 @@ function check_log_in($what = 'client', $type = 'default', $return_url = false) 
         }
         if (is_null($_SESSION['user'])) {
             $full_url = $return_url ? '&forward=http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING'] : '';
-            header('Location: http://www.medialusions.com?mes=Login first to view this page.' . $full_url . '#log-in');
+            header('Location: '.$site_base.'?mes=Login first to view this page.' . $full_url . '#log-in');
             die;
         }
     } else if ($what == 'menu') {
