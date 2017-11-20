@@ -1,4 +1,5 @@
 <?php
+include_once ('/constants.php');
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 
@@ -204,6 +205,7 @@ function sendMail($to, $subject = "Your Monthly Account Summary", $message = "",
     $htmlTemplate = str_replace('{UNAME}', $to['user'] . ' (Pwd: ' . $to['pass'] . ')', $htmlTemplate);
     $htmlTemplate = str_replace('{CONTENT}', $message, $htmlTemplate);
     $htmlTemplate = str_replace('*|CURRENT_YEAR|*', date('Y'), $htmlTemplate);
+    $htmlTemplate = str_replace('*|ADDRESS|*', ADDRESS1 . ' ' . ADDRESS2, $htmlTemplate);
     $htmlTemplate = str_replace('*|LIST:COMPANY|*', 'Medialusions Interactive, Inc', $htmlTemplate);
     //echo $htmlTemplate;
     //die;

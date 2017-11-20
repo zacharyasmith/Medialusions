@@ -1,5 +1,6 @@
 <?php
 
+include ('php/constants.php');
 include ('php/functions.php');
 include ('php/grid.php');
 include ('php/client.php');
@@ -166,8 +167,8 @@ if (isset($_GET['thankyou'])) {
                         <h2>--Or pay with check written to Medialusions**:</h2>
                         <div style="padding: 0 5px;">
                             Medialusions Interactive, Inc.<br>
-                            1606 Birmingham Dr<br>
-                            Fort Collins, CO 80526<br><br>
+                            <?= ADDRESS1 ?><br>
+                            <?= ADDRESS2 ?><br><br>
                             <span style="font-size: 10px;">
                             *Friendly 2.9% applied for all PayPal/Credit Card transactions.<br>
                             </span>

@@ -1,4 +1,5 @@
 <?php
+include('php/constants.php');
 include('php/functions.php');
 
 $error_contact = '';
@@ -56,7 +57,7 @@ if (isset($_POST['user'])) {
         <link rel="canonical" href="http://medialusions.com/" />
         <META NAME="Keywords" CONTENT="web design, web development, parker web design, parker web hosting,
               parker email solutions, web design parker co, web hosting parker co, email solutions parker co,
-              franktown web design, franktown web hosting, franktown email solutions, 
+              franktown web design, franktown web hosting, franktown email solutions,
               web design franktown co, web hosting franktown co, email solutions franktown co" />
         <META NAME="description" CONTENT="Local web development company. Offering complete web marketing solutions.
               Serving Franktown, Parker and Fort Collins." />
@@ -102,8 +103,8 @@ if (isset($_POST['user'])) {
                 <div>
                     <h1>Contact:</h1>
                     <h3>Medialusions Interactive, Inc.</h3>
-                    <h3>PO Box 130</h3>
-                    <h3>Franktown, CO 80116</h3>
+                    <h3><?= ADDRESS1 ?></h3>
+                    <h3><?= ADDRESS2 ?></h3>
                     <h3>info@medialusions.com</h3>
                     <h3>(303) 549-0491</h3>
                 </div>
@@ -145,7 +146,7 @@ if (isset($_POST['user'])) {
                     <a href="?s=Website">PORTFOLIO</a>
                     <a href="#contact">CONTACT</a>
                     <a href="<?php echo check_log_in('menu_link'); ?>"><?php echo check_log_in('menu'); ?></a>
-                    <?php echo check_log_in('log_out'); ?> 
+                    <?php echo check_log_in('log_out'); ?>
                     <a href="https://soundcloud.com/medialusions" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a>
                     <a href="https://www.facebook.com/medialusions" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://plus.google.com/+Medialusions/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
