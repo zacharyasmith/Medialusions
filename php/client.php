@@ -28,6 +28,17 @@ class Client {
             $this->select();
     }
 
+    static function outstandingClients() {
+      $query = mysql_query("SELECT `dueDate`, `clientId` FROM charges WHERE status='unpaid' GROUP BY(clientId) ORDER BY dueDate ASC");
+
+      $ret_val = array();
+      while ($row = mysql_fetch_array($query)) {
+        array_push($ret_val, new Client($row['clientId']));
+      }
+
+      return $ret_val;
+    }
+
     function findLastLoginDate() {
         $query = mysql_query("SELECT `date` FROM tracker WHERE user_id='$this->id' ORDER BY STR_TO_DATE(date,'%Y-%m-%d') DESC LIMIT 1");
         $numRow = mysql_num_rows($query);
@@ -69,7 +80,7 @@ class Client {
     function sendEmail() {
         $message = '<div align="center">';
 
-        $emailSubject = 'Your ' . date('F') . ' Account Summary';
+        $emailSubject = $this->name . '\'s ' . date('F') . ' Account Summary';
         //sendMail(array('user' => $this->email, 'name' => $this->name), $emailSubject, $message);
 
         $invoices = $this->getCharges(); //get all invoices that have unpaid status
