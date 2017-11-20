@@ -28,12 +28,12 @@ class Client {
             $this->select();
     }
 
-    static function outstandingClients() {
+    static function outstandingClients($ids = false) {
       $query = mysql_query("SELECT `dueDate`, `clientId` FROM charges WHERE status='unpaid' GROUP BY(clientId) ORDER BY dueDate ASC");
 
       $ret_val = array();
       while ($row = mysql_fetch_array($query)) {
-        array_push($ret_val, new Client($row['clientId']));
+        array_push($ret_val, $ids ? $row['clientId'] : new Client($row['clientId']));
       }
 
       return $ret_val;
@@ -119,7 +119,7 @@ class Client {
             $total = 0;
             $numInvoices++;
         }
-        
+
         if($numInvoices == 0){
             //DO NOTHING FOR NOW...
         }else{
