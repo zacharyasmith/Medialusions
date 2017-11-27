@@ -56,8 +56,8 @@ if (!$invoice->userCheck($client->id) && !check_log_in('admin', 'boolean')) {
                     <div class="floatl"><strong>From</strong></div>
                     Zach Smith<br>
                     Medialusions Interactive<br>
-                    PO Box 130<br>
-                    Frantown, CO<br>
+                    <?= ADDRESS1 ?><br>
+                    <?= ADDRESS2 ?><br>
                     (303) 549-0491<br>
                 </div>
             </div>
@@ -89,7 +89,7 @@ if (!$invoice->userCheck($client->id) && !check_log_in('admin', 'boolean')) {
                 <h2>Total cost is estimated... Subject to change accordingly.</h2>
                 <strong><i>Thank you for your business!</i></strong>
                 <br><br>
-                <font color="#792c8c">Medialusions Interactive, Inc.  PO Box 130, Franktown, Co, 80116.  (303) 549-0491  zach@medialusions.com</font>
+                <font color="#792c8c">Medialusions Interactive, Inc.  <?= ADDRESS1 . ', ' . ADDRESS2 ?>.  (303) 549-0491  zach@medialusions.com</font>
             </div>
         </div>
     </body>

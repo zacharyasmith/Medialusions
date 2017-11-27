@@ -70,7 +70,7 @@ if (isset($_POST['user'])) {
     </head>
     <body>
         <div style="display: none;">
-            Web Design &amp; Development in Franktown, Parker, and Castle Rock, Colorado. Mobile &amp; Responsive websites.
+            Web Design &amp; Development in Ft. Collins, Franktown, Parker, and Castle Rock, Colorado. Mobile &amp; Responsive websites.
             <h1>Medialusions Interactive</h1>
             <h1>Web Development</h1>
             <h1>Web Design</h1>
@@ -131,8 +131,8 @@ if (isset($_POST['user'])) {
                 <div>
                     <h1>For Inquiries:</h1>
                     <h3>Medialusions Interactive, Inc.</h3>
-                    <h3>PO Box 130</h3>
-                    <h3>Franktown, CO 80116</h3>
+                    <h3><?= ADDRESS1 ?></h3>
+                    <h3><?= ADDRESS2 ?></h3>
                     <h3>info@medialusions.com</h3>
                     <h3>(303) 549-0491</h3>
                     <h3>Or <a href="#contact">send us a message</a></h3>
