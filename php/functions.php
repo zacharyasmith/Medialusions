@@ -1,5 +1,5 @@
 <?php
-include_once ('./constants.php');
+include_once ('constants.php');
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 
