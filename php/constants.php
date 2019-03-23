@@ -1,4 +1,4 @@
 <?php
 
-define('ADDRESS1', '1813 Hull St.');
-define('ADDRESS2', 'Ft. Collins, CO 80526');
+define('ADDRESS1', '7598 S Balsam St. Apt D');
+define('ADDRESS2', 'Littleton, CO 80128');
